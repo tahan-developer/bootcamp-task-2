@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+شnuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+    <div class="container">
+      
+      <header class="">
+        <h1>
+          لیست تراکنش ها 
+     </h1>
+<form>
+  <div class="search d-none">
+    <input type="text" class="input-search" placeholder="جستجو تراکنش..." >
+    <button type="submit" class="btn-search"> <i class="fa fa-search"></i></button>
+  </div>
+
+</form>
+    
+      </header>
+    
+    <section class="transactionBox d-none">
+      <h3>
+        لیست تراکنش های شما
+      </h3>
+    
+    <div class="transaction-header">
+      <div class="btn-sort btn-sort-id">ردیف
+        <i class="icon fa fa-angle-down "></i>
+      </div>
+      <div>نوع تراکنش </div>
+      <div class="btn-sort btn-sort-price">  مبلغ
+        <i class="icon fa fa-angle-down"></i>
+      </div>
+      <div>شماره پیگیری</div>
+      <div class="btn-sort btn-sort-date" > تاریخ تراکنش  
+        <i class="icon fa fa-angle-down"></i>
+      </div>
+    </div>
+     <div class="transactions">
+
+     </div>
+</section>
+<div class="btns">
+  <input type="button" class="btn get-data" value="بارگذاری تراکنش ها">
+</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
